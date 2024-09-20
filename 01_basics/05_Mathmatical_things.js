@@ -10,3 +10,13 @@ console.log(Math.abs(-4))
 console.log(Math.round(4.6)) // round off value give if less than 4.5 then value is 4 other wise value 5
 console.log(Math.ceil(4.2)) // its give upper value like 5
 console.log(Math.floor(4.2)) // its give lower value like 4
+
+// math.random 0 to 1 ke bich mai value deta h 
+
+// ******************* DATE *******************
+
+// all are date formate
+let my_date = new Date()
+console.log(my_date.toString())
+console.log(my_date.toDateString())
+console.log(my_date.toLocaleDateString())

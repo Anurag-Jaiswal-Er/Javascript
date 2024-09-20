@@ -55,3 +55,11 @@ const myFunction = function(){
 }
 
 myFunction()
+
+// how to write a string in a right form 
+
+let temp1 = "Anurag"
+let temp2 = "Jaiswal"
+let phoneNumber = "7355481797"
+
+console.log(`My name is ${temp1} ${temp2} and my phone Number is ${phoneNumber}`) // always write string in this form 

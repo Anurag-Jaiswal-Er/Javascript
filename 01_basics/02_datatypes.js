@@ -15,3 +15,24 @@
 console.log(typeof "Anurag jaiswal")
 console.log(typeof null) // its output is object
 console.log(typeof undefined) //its output is undefined 
+
+// Primitive data type
+
+// 1 -> String
+// 2 -> Number
+// 3 -> Boolean
+// 4 -> null
+// 5 -> undefined
+// 6 -> Symbol  // use to make a unique key or component
+// 7 -> BigInt
+
+
+// Non primitive data type (Reference type)
+
+// 1 -> Array
+// 2 -> Objects
+// 3 -> Function
+
+
+// javascript dynamically type langauge
+

@@ -36,3 +36,15 @@ console.log(typeof undefined) //its output is undefined
 
 // javascript dynamically type langauge
 
+const Heros = ["Thor" , "Ironman" , "Captan America" , "Doctor Strange"] // Array
+
+console.log(Heros)
+
+let myObj = {
+    name: "Anurag Jaiswal",
+    age: 23,
+    email: "anuragjaiswal7355@gmail.com"
+} // this is called obj obj declair in key value form
+
+console.log(myObj)
+

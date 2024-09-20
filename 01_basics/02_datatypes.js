@@ -27,7 +27,7 @@ console.log(typeof undefined) //its output is undefined
 // 7 -> BigInt
 
 
-// Non primitive data type (Reference type)
+// Non primitive data type (Reference type) always return type is object function
 
 // 1 -> Array
 // 2 -> Objects
@@ -48,3 +48,10 @@ let myObj = {
 
 console.log(myObj)
 
+// function
+
+const myFunction = function(){
+    console.log("hellow world")
+}
+
+myFunction()

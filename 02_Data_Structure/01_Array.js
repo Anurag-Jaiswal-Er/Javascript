@@ -29,3 +29,26 @@ console.log(newarr);
 // slice(startindex , endindex) use to genrate a particular part of a array endindex are not include but startindex include
 
 // splice() end index include hota h aur original array manupulate ho jata h 
+
+
+const marvel_heros = ["thor" , "ironman" , "hulk" , "strange"]
+const dc_heros = ["superman" , "flas" , "batman" , "aquaman" , "wonder woman"]
+
+marvel_heros.push(dc_heros)
+console.log(marvel_heros) // entire dc_heros array take a one element
+
+
+const all_heros = marvel_heros.concat(dc_heros) // concate then array are join and form a new entire array
+console.log(all_heros)
+
+
+// spred operator are always use to combine two or more than two array
+// in spred case all element are like individual element 
+const Name = ["anurag" , "ragni" , "abhishek"]
+const cast = ["jaiswal","chaudhary","kushwaha"]
+const fullName = [...Name, ...cast]
+console.log(fullName)
+
+
+
+

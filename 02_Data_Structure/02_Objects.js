@@ -9,11 +9,8 @@ const jsuser = {
     isLoggedIn: false,
     lastLoginDays: ["Monday" , "saturday"]
 } // object are declare
-
 // how to access the object 
-
 console.log(jsuser.gmail) // one method but not recomded to use this method to acess the object
-
 console.log(jsuser["gmail"]) // this method is good one to use for code readable because in object thing are treate like string so we use "email" like string
 console.log(jsuser[mysym])
 jsuser.age = 24
@@ -36,5 +33,14 @@ console.log(result)
 // another method for combinde obj using spreed operator
 const result1 = {...obj1 , ...obj2 , ...obj3}
 console.log(result1)
+const course = {
+    courseName:"javascript",
+    courseInstructor: "Anurag",
+    chanel: "Desi_coder"
+}
+// exctrate the value in another way like
+const {courseName : Cname} = course // destruture courseName in only Cname
+console.log(Cname)
 
 
+// ********************** API ********************

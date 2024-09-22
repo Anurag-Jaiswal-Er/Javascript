@@ -50,5 +50,18 @@ const fullName = [...Name, ...cast]
 console.log(fullName)
 
 
+// looping on array 
+
+const coding = ["java" , "javascript" , "python" , "cpp" , "c#"]
+coding.forEach( function (items) {
+      console.log(items)
+}) // callback function use forEach
+  console.log("change the line")
+coding.forEach((val) => {
+   console.log(val)
+})
+
+
+
 
 

@@ -70,9 +70,31 @@ const f = () => {
   console.log(this); // output will be empty
   console.log(this.temp); // not work here also output will be undefined
 };
-f()(
+f()
   // Immediately invoked function expressions (IIFEE)
 
   //  function chai(){
   //   // console.log(`DB CONNECTED`)
   //  }() // its gives error because scope ke andar ni h to hum ek paranthesis laga ke wrap kr denge jisse a ek scope mai aa jayega
+
+
+  // filter function
+
+  const myNums = [1,2,3,4,5,6,7,8,9,10]
+  const newNums = myNums.filter((num) => num<7) // filter function is use to filter the data acording the user
+  console.log(newNums)
+
+  // add 10 in all element of myNums array
+  console.log("map")
+
+  const addnums = myNums.map((val) => { return val+10})
+  console.log(addnums);
+  
+
+  // chaining bascially if use one map then just after u can use another map or filter method and viceversa
+
+  const opernums = myNums.map((num) => {return num*10}).map((nums)=>{ return nums+1}).filter((nums)=> nums>41)
+  console.log(`opernums is ${opernums}`)
+  console.log(opernums)
+
+  

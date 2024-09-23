@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Events</title>
+</head>
+<body>
+    <h2>Amazing Image</h2>
+    <div>
+        <ul id="Images">
+            <li>
+                <img width="200px" id="photoshop" src="https://images.pexels.com/photos/18762756/pexels-photo-18762756/free-photo-of-corner-of-block-of-flats.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="photos">
+            </li>
+            <li>
+                <img width="200px" id="girls" src="https://images.pexels.com/photos/19220718/pexels-photo-19220718/free-photo-of-young-model-in-a-pink-t-shirt-and-jeans-posing-in-the-studio.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="">
+            </li>
+            <li>
+                <img width="200px" id="house" src="https://images.pexels.com/photos/27680937/pexels-photo-27680937/free-photo-of-a-bride-and-groom-sitting-on-a-bench-outside-a-restaurant.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="">
+            </li>
+        </ul>
+    </div>
+</body>
+<script>
+   document.getElementById('girls').addEventListener('click' , function()
+{
+    alert("girls clicked again")
+}) 
+
+// attachEvent() method 
+// type ,timestamp , defaultprevented
+// target , toelement , srcElement , currentTarget,
+// clientX , clientY , screenx , screenY
+// altkey , ctrkey , shiftkey , keyCode
+</script>
+</html>

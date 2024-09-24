@@ -22,11 +22,27 @@
     </div>
 </body>
 <script>
-   document.getElementById('girls').addEventListener('click' , function()
-{
-    alert("girls clicked again")
-}) 
+//    document.getElementById('girls').addEventListener('click' , function()
+// {
+//     alert("girls clicked again")
+// }) 
 
+// document.querySelector('#Images').addEventListener('click' , function(e){
+//    console.log(e.target.parentNode)
+//    let remove = e.target.parentNode
+//    remove.remove() // in this code problem is all ul list delete 
+// })
+
+
+document.querySelector('#Images').addEventListener('click',function(e){
+   console.log(e.target.tagName)
+
+   if(e.target.tagName === 'IMG')
+   {
+    let remove = e.target.parentNode
+    remove.remove()
+   }
+})
 // attachEvent() method 
 // type ,timestamp , defaultprevented
 // target , toelement , srcElement , currentTarget,

@@ -1,0 +1,21 @@
+                        Javascript
+
+> Synchronous
+> single Threaded
+
+                        Execution Context
+
+> execute one line of code at a time
+> console.log->1
+> console.log->2
+
+                     Blocking code VS Blocking code
+
+Blocking code
+>block the flow at program 
+>Read file Synchronous
+Non Blocking code
+>Does not block Execution
+>Read File Async 
+
+

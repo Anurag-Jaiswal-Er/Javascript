@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body style="background-color: #212121">
+    Value State Description 0 UNSENT Client has been created. open() not called
+    yet. 1 OPENED open() has been called. 2 HEADERS_RECEIVED send() has been
+    called, and headers and status are available. 3 LOADING Downloading;
+    responseText holds partial data. 4 DONE The operation is complete.
+  </body>
+  <script>
+    let requesturl = "https://api.github.com/users/Anurag-Jaiswal-Er";
+    const xhr = new XMLHttpRequest();
+    xhr.open("GET", requesturl);
+    xhr.onreadystatechange = function () {
+      console.log(xhr.readyState); // state change ho ri h isse pata chl raha h
+
+      if (xhr.readyState === 4) {
+        // console.log(this.responseText); // now we recive data on console
+        const data = this.responseText;
+        // response hemsa string mai aata h aur hum . ke through object extract krte h so undefined output aa raha h
+        console.log(data.followers)
+        // now string to object mai convert krna padega
+        const newData = JSON.parse(this.responseText) // JSON.parse string ko object mai convert kr deta h now hum data ko access kr skte h 
+        console.log(typeof newData) // now object return ho raha h 
+        console.log(newData.public_repos)
+        const imgurl = newData.avatar_url;
+        console.log(imgurl) // image url mil raha h
+      }
+    };
+    xhr.send();
+  </script>
+</html>

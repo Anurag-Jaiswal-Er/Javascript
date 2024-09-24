@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="background-color: rgb(30, 28, 28); color: white;">
+    <h1>Desi coder</h1>
+    <button id="stop">Stop</button>
+</body>
+<script>
+    setTimeout( function()
+{
+    console.log("Anurag Jaiswal")
+},2000) // itni der ka time lo aur mere kam kro
+
+const ChangeText = function()
+{
+    document.querySelector('h1').innerHTML="Best JS series"  
+}
+// setTimeout(ChangeText,5000) // after 2 second heading change 
+let changeme = setTimeout(ChangeText,2000)
+
+document.querySelector('#stop').addEventListener('click' , function(){
+    clearTimeout(changeme)
+    console.log("Event stop")
+})
+// change h1 text after 2 sec and add stop button to stop the event if any one want to 
+</script>
+</html>
